@@ -17,7 +17,7 @@ contract EtherStore {
 
         balances[msg.sender] = 0;
     }
-
+    test demo
     function getBalance() public view returns (uint256) {
         return address(this).balance;
     }
