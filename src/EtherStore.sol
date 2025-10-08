@@ -3,7 +3,7 @@ pragma solidity ^0.8.26;
 
 contract EtherStore {
     mapping(address => uint256) public balances;
-
+#Test 1
     function deposit() public payable {
         balances[msg.sender] += msg.value;
     }
@@ -17,7 +17,7 @@ contract EtherStore {
 
         balances[msg.sender] = 0;
     }
-
+#Test 2
     function getBalance() public view returns (uint256) {
         return address(this).balance;
     }
